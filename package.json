@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest --runInBand"
   },
   "keywords": [
